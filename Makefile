@@ -1,4 +1,4 @@
-all: bash dns
+all: bash dns nano
 
 bash:
 	rsync home/bashrc ~/.bashrc
@@ -7,4 +7,7 @@ bash:
 dns:
 	sudo rsync etc/resolv.conf /etc/resolv.conf
 
-.PHONY: all bash dns
+nanorc:
+	rsync home/nanorc ~/.nanorc
+
+.PHONY: all bash dns nano
