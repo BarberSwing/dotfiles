@@ -23,6 +23,10 @@ if ! shopt -oq "posix"; then
 	fi
 fi
 
+if [ -f "${HOME}/.bash_completion" ]; then
+	. "${HOME}/.bash_completion"
+fi
+
 for file in "${HOME}/.bashrc.d/"*; do
 	if [ -f "${file}" ]; then
 		. "${file}"
