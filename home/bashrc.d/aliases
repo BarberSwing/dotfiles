@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# diff
+alias diff='diff --color=auto'
+
+# dir
+alias dir='dir --color=auto'
+
+# grep
+alias grep='grep --color=auto'
+alias egrep='grep --extended-regexp'
+alias fgrep='grep --fixed-strings'
+alias rgrep='grep --recursive'
+
+# ls
+alias ls='ls --color=auto --classify --dereference-command-line'
+alias l='ls'
+alias la='ls --almost-all'
+alias ll='la -l'
+
+# vdir
+alias vdir='vdir --color=auto'
