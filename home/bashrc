@@ -1,0 +1,24 @@
+#!/bin/bash
+
+[[ "${-}" != *i* ]] && return
+
+if [ "$(tput colors)" -gt "0" ]; then
+	white='\[\e[0m\]'
+	green='\[\e[1;32m\]'
+	blue='\[\e[1;34m\]'
+fi
+
+PS1="${green}\u@\h${white}:${blue}\w${white}\$ "
+unset white green blue
+
+HISTCONTROL="ignoreboth"
+
+tabs 4
+
+if ! shopt -oq "posix"; then
+	if [ -f "/usr/share/bash-completion/bash_completion" ]; then
+		. "/usr/share/bash-completion/bash_completion"
+	elif [ -f "/etc/bash_completion" ]; then
+		. "/etc/bash_completion"
+	fi
+fi
