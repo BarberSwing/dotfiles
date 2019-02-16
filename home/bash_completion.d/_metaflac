@@ -1,0 +1,98 @@
+#!/bin/bash
+
+_metaflac() {
+	local cur prev words cword opts list_opts remove_opts
+	_init_completion || return
+	opts='
+	--preserve-modtime
+	--with-filename
+	--no-filename
+	--no-utf8-convert
+	--dont-use-padding
+	--show-md5sum
+	--show-min-blocksize
+	--show-max-blocksize
+	--show-min-framesize
+	--show-max-framesize
+	--show-sample-rate
+	--show-channels
+	--show-bps
+	--show-total-samples
+	--show-vendor-tag
+	--show-tag=
+	--remove-tag=
+	--remove-first-tag=
+	--remove-all-tags
+	--set-tag=
+	--set-tag-from-file=
+	--import-tags-from=
+	--export-tags-to=
+	--import-cuesheet-from=
+	--export-cuesheet-to=
+	--import-picture-from=
+	--export-picture-to=
+	--add-replay-gain
+	--scan-replay-gain
+	--remove-replay-gain
+	--add-seekpoint=
+	--add-padding=
+	--list
+	--remove
+	--remove-all
+	--merge-padding
+	--sort-padding
+	'
+	list_opts='
+	--block-number=
+	--block-type=
+	--except-block-type=
+	--application-data-format=
+	'
+	remove_opts='
+	--block-number=
+	--block-type=
+	--except-block-type=
+	'
+
+	case "${prev}" in
+		--show-tag|--remove-tag|--remove-first-tag|--set-tag|\
+		--add-seekpoint|--add-padding|\
+		--block-number|--block-type|--except-block-type|\
+		--application-data-format)
+		return
+		;;
+
+		--set-tag-from-file|--import-tags-from|--export-tags-to|\
+		--import-cuesheet-from|--export-cuesheet-to|\
+		--import-picture-from|--export-picture-to)
+		_filedir
+		return
+		;;
+
+		--list)
+		COMPREPLY=($( compgen -W "${list_opts}" -- "${cur}"))
+		compopt -o nospace
+		return
+		;;
+
+		--remove)
+		COMPREPLY=($( compgen -W "${remove_opts}" -- "${cur}"))
+		compopt -o nospace
+		return
+		;;
+	esac
+
+	case $cur in
+		-*)
+		COMPREPLY=($(compgen -W "${opts}" -- "$cur"))
+		[[ $COMPREPLY == *= ]] && compopt -o nospace
+		return
+		;;
+
+		*)
+		_filedir
+		return
+		;;
+	esac
+} &&
+complete -F _metaflac metaflac
