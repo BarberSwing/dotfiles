@@ -1,0 +1,4 @@
+[span weight='bold' size='large']<title>[/span]<~length| (<~length>)><version|
+[small][b]<version>[/b][/small]><artist|
+by <artist>><album|
+[b]<album>[/b]<discnumber| - Disc <discnumber>><discsubtitle| - [b]<discsubtitle>[/b]><tracknumber| - Track <tracknumber>>>

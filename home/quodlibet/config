@@ -1,0 +1,31 @@
+[browsers]
+background = exclude = ""
+covergrid_all = true
+rating_click = false
+
+[editing]
+save_to_songs = false
+
+[memory]
+browser = SearchBar
+queue = true
+queue_expanded = true
+queue_stop_once_empty = true
+quodlibet_last_active_version = 3.9.1
+shuffle_mode = Queue Only
+sortby = 0~album~discsubtitle
+
+[rename]
+ascii = true
+diacriticals = true
+spaces = true
+windows = true
+
+
+[plugins]
+active_plugins = queue
+	ReplayGain
+
+[settings]
+columns = albumartist,~album~discsubtitle,~#disc,~#track,artist,~title~version,~#length,~#playcount,~#skipcount,bpm
+scan = /home/barberswing/Music/Library:/home/barberswing/Music/Exclude:/home/barberswing/Music/In

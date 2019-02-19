@@ -1,4 +1,4 @@
-all: bash dns nano
+all: bash dns nano quodlibet
 
 bash:
 	rsync home/bash_completion ~/.bash_completion
@@ -11,5 +11,8 @@ dns:
 
 nanorc:
 	rsync home/nanorc ~/.nanorc
+
+quodlibet:
+	rsync -r --delete home/quodlibet/ ~/.quodlibet/
 
 .PHONY: all bash dns nano
