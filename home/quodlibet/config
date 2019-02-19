@@ -13,7 +13,7 @@ queue_expanded = true
 queue_stop_once_empty = true
 quodlibet_last_active_version = 3.9.1
 shuffle_mode = Queue Only
-sortby = 0~album~discsubtitle
+sortby = 0albumartist
 
 [rename]
 ascii = true
