@@ -21,4 +21,4 @@ quodlibet:
 	rsync -r --delete home/quodlibet/lists/ ~/.quodlibet/lists/
 	rsync home/quodlibet/songinfo ~/.quodlibet/songinfo
 
-.PHONY: all bash dns nano quodlibet
+.PHONY: all bash dconf dns nano quodlibet
