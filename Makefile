@@ -1,4 +1,4 @@
-all: bash dns nano quodlibet
+all: bash dconf dns nano quodlibet
 
 bash:
 	rsync home/bash_completion ~/.bash_completion
@@ -6,10 +6,13 @@ bash:
 	rsync home/bashrc ~/.bashrc
 	rsync -r --delete home/bashrc.d/ ~/.bashrc.d/
 
+dconf:
+	dconf load / < home/config/dconf/global
+
 dns:
 	sudo rsync etc/resolv.conf /etc/resolv.conf
 
-nanorc:
+nano:
 	rsync home/nanorc ~/.nanorc
 
 quodlibet:

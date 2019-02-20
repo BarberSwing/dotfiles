@@ -1,0 +1,168 @@
+[org/gnome/desktop/background]
+show-desktop-icons=false
+
+[org/gnome/desktop/input-sources]
+xkb-options=['compose:caps', 'shift:both_capslock']
+
+[org/gnome/desktop/interface]
+clock-format='24h'
+clock-show-date=true
+show-battery-percentage=true
+
+[org/gnome/desktop/media-handling]
+autorun-never=true
+
+[org/gnome/desktop/peripherals/touchpad]
+tap-to-click=false
+
+[org/gnome/desktop/privacy]
+old-files-age=uint32 7
+remember-recent-files=false
+remove-old-temp-files=true
+remove-old-trash-files=true
+
+[org/gnome/desktop/search-providers]
+disable-external=true
+
+[org/gnome/desktop/sound]
+allow-volume-above-100-percent=true
+
+[org/gnome/desktop/wm/keybindings]
+activate-window-menu=@as []
+begin-move=@as []
+begin-resize=@as []
+close=['<Super>Delete']
+cycle-group-backward=@as []
+cycle-group=@as []
+cycle-panels-backward=@as []
+cycle-panels=@as []
+cycle-windows-backward=@as []
+cycle-windows=@as []
+maximize=@as []
+minimize=@as []
+move-to-monitor-down=@as []
+move-to-monitor-left=['<Super>a']
+move-to-monitor-right=['<Super>d']
+move-to-monitor-up=@as []
+move-to-workspace-1=@as []
+move-to-workspace-down=['<Shift><Super>s']
+move-to-workspace-last=@as []
+move-to-workspace-up=['<Shift><Super>w']
+panel-main-menu=@as []
+panel-run-dialog=@as []
+show-desktop=@as []
+switch-applications-backward=['<Shift><Super>Tab']
+switch-applications=['<Super>Tab']
+switch-group-backward=@as []
+switch-group=@as []
+switch-input-source-backward=['<Shift><Alt><Super>space']
+switch-input-source=['<Alt><Super>space']
+switch-panels-backward=@as []
+switch-panels=@as []
+switch-to-workspace-1=@as []
+switch-to-workspace-down=['<Super>s']
+switch-to-workspace-last=@as []
+switch-to-workspace-up=['<Super>w']
+switch-windows-backward=['<Shift><Super>q']
+switch-windows=['<Super>q']
+toggle-maximized=['<Super>x']
+unmaximize=@as []
+
+[org/gnome/desktop/wm/preferences]
+action-middle-click-titlebar='none'
+
+[org/gnome/gedit/plugins]
+active-plugins=@as []
+
+[org/gnome/gedit/preferences/editor]
+auto-indent=true
+bracket-matching=true
+display-line-numbers=true
+display-right-margin=true
+highlight-current-line=true
+right-margin-position=uint32 80
+tabs-size=uint32 4
+
+[org/gnome/mutter]
+overlay-key=''
+
+[org/gnome/mutter/keybindings]
+toggle-tiled-left=['<Super>z']
+toggle-tiled-right=['<Super>c']
+
+[org/gnome/mutter/wayland/keybindings]
+restore-shortcuts=@as []
+
+[org/gnome/nautilus/list-view]
+default-visible-columns=['name', 'size', 'type', 'date_modified']
+
+[org/gnome/nautilus/preferences]
+search-view='list-view'
+default-folder-viewer='list-view'
+show-create-link=true
+
+[org/gnome/settings-daemon/plugins/color]
+night-light-enabled=true
+night-light-schedule-automatic=true
+
+[org/gnome/settings-daemon/plugins/media-keys]
+area-screenshot-clip=''
+area-screenshot=''
+calculator=''
+control-center=''
+eject=''
+email=''
+home=''
+logout=''
+magnifier-zoom-in=''
+magnifier-zoom-out=''
+magnifier=''
+media=''
+next='AudioNext'
+pause=''
+play='AudioPlay'
+previous='AudioPrev'
+screencast=''
+screenreader=''
+screensaver='<Super>Escape'
+screenshot-clip='Print'
+screenshot=''
+search=''
+stop=''
+terminal='<Super>Return'
+volume-down='AudioLowerVolume'
+volume-mute='AudioMute'
+volume-up='AudioRaiseVolume'
+window-screenshot-clip=''
+window-screenshot=''
+www=''
+
+[org/gnome/settings-daemon/plugins/power]
+idle-dim=false
+power-button-action='nothing'
+sleep-inactive-battery-type='nothing'
+
+[org/gnome/shell/extensions/dash-to-dock]
+dock-fixed=false
+extend-height=true
+hot-keys=false
+intellihide-mode='ALL_WINDOWS'
+preferred-monitor=0
+
+[org/gnome/shell/keybindings]
+focus-active-notification=@as []
+open-application-menu=@as []
+toggle-application-view=@as []
+toggle-message-tray=@as []
+toggle-overview=['<Super>space']
+
+[org/gnome/system/location]
+enabled=true
+
+[org/gnome/terminal/legacy]
+menu-accelerator-enabled=false
+default-show-menubar=false
+shortcuts-enabled=false
+
+[org/gtk/settings/file-chooser]
+clock-format='24h'
