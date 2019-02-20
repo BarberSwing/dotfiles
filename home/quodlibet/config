@@ -25,7 +25,9 @@ windows = true
 
 
 [plugins]
-active_plugins = queue
+active_plugins = embedded_edit
+	queue
+	Picture Saver
 	ReplayGain
 
 [settings]
