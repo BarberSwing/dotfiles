@@ -13,6 +13,9 @@ nanorc:
 	rsync home/nanorc ~/.nanorc
 
 quodlibet:
-	rsync -r --delete home/quodlibet/ ~/.quodlibet/
+	rsync home/quodlibet/album_pattern ~/.quodlibet/album_pattern
+	rsync home/quodlibet/config ~/.quodlibet/config
+	rsync -r --delete home/quodlibet/lists ~/.quodlibet/lists
+	rsync home/quodlibet/songinfo ~/.quodlibet/songinfo
 
-.PHONY: all bash dns nano
+.PHONY: all bash dns nano quodlibet
