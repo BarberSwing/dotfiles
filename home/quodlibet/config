@@ -8,6 +8,8 @@ save_to_songs = false
 
 [memory]
 browser = SearchBar
+column_expands = albumartist,1,~album~discsubtitle,1,artist,1,~title~version,1,bpm,0
+column_widths = albumartist,-1,~album~discsubtitle,-1,artist,-1,~title~version,-1,bpm,-1
 queue = true
 queue_expanded = true
 queue_stop_once_empty = true
