@@ -8,10 +8,11 @@ fi
 apt update
 snap refresh
 
+apt install -y build-essential
 apt install -y default-jre
 apt install -y flac
 apt install -y git
-apt install -y make
+apt install -y transmission-gtk
 snap install --classic android-studio
 snap install --classic atom
 snap install audacity
