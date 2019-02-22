@@ -12,6 +12,7 @@ apt install -y build-essential
 apt install -y default-jre
 apt install -y flac
 apt install -y git
+apt install -y qemu-kvm
 apt install -y transmission-gtk
 snap install --classic android-studio
 snap install --classic atom
