@@ -9,6 +9,7 @@ apt update
 snap refresh
 
 apt install -y build-essential
+apt install -y default-jdk
 apt install -y default-jre
 apt install -y flac
 apt install -y git
