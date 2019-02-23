@@ -11,6 +11,7 @@ dconf:
 
 dns:
 	sudo rsync etc/resolv.conf /etc/resolv.conf
+	sudo rsync etc/NetworkManager/conf.d/no-dns.conf /etc/NetworkManager/conf.d/no-dns.conf 
 
 nano:
 	rsync home/nanorc ~/.nanorc
