@@ -8,18 +8,17 @@ fi
 apt update
 snap refresh
 
+apt install -y audacity
 apt install -y build-essential
 apt install -y default-jdk
 apt install -y default-jre
+apt install -y ffmpeg
 apt install -y flac
+apt install -y gimp
 apt install -y git
+apt install -y libreoffice
+#apt install -y obs-studio
 apt install -y qemu-kvm
-apt install -y transmission-gtk
+apt install -y retroarch
+apt install -y transmission
 snap install --classic android-studio
-snap install --classic atom
-snap install audacity
-snap install ffmpeg
-snap install gimp
-snap install libreoffice
-snap install obs-studio
-snap install retroarch
