@@ -6,19 +6,29 @@ if [ "${EUID}" -ne 0 ]; then
 fi
 
 apt update
-snap refresh
+apt upgrade -y
 
-apt install -y audacity
-apt install -y build-essential
-apt install -y default-jdk
-apt install -y default-jre
-apt install -y ffmpeg
-apt install -y flac
-apt install -y gimp
-apt install -y git
-apt install -y libreoffice
-#apt install -y obs-studio
-apt install -y qemu-kvm
-apt install -y retroarch
-apt install -y transmission
+apt_list=()
+apt_list+=("audacity")
+apt_list+=("clang")
+apt_list+=("default-jdk")
+apt_list+=("default-jre")
+apt_list+=("ffmpeg")
+apt_list+=("flac")
+apt_list+=("gcc")
+apt_list+=("gimp")
+apt_list+=("git")
+apt_list+=("libreoffice")
+apt_list+=("make")
+#apt_list+=("obs-studio")
+apt_list+=("qemu-kvm")
+apt_list+=("quodlibet")
+apt_list+=("retroarch")
+apt_list+=("transmission")
+apt_list+=("vlc")
+
+apt install -y "${apt_list[@]}"
+
+
+snap refresh
 snap install --classic android-studio
