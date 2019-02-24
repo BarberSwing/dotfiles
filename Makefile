@@ -10,7 +10,9 @@ dconf:
 	dconf load / < home/config/dconf/global
 
 dns:
+	sudo chattr -i /etc/resolv.conf
 	sudo rsync etc/resolv.conf /etc/resolv.conf
+	sudo chattr +i /etc/resolv.conf
 	sudo rsync etc/NetworkManager/conf.d/no-dns.conf /etc/NetworkManager/conf.d/no-dns.conf 
 
 nano:
