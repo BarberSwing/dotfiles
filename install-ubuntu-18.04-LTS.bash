@@ -24,6 +24,7 @@ main() {
 	apt_list+=("ffmpeg")
 	apt_list+=("flac")
 	apt_list+=("gcc")
+	apt_list+=("gcc-multilib")
 	apt_list+=("gimp")
 	apt_list+=("git")
 	apt_list+=("libreoffice")
