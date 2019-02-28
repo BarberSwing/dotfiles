@@ -16,7 +16,7 @@ main() {
 	apt upgrade -y
 
 	apt_list=()
-	apt_list+=("atom")
+	#apt_list+=("atom")
 	apt_list+=("audacity")
 	apt_list+=("clang")
 	apt_list+=("default-jdk")
@@ -24,14 +24,14 @@ main() {
 	apt_list+=("ffmpeg")
 	apt_list+=("flac")
 	apt_list+=("gcc")
-	apt_list+=("gcc-multilib")
+	#apt_list+=("gcc-multilib")
 	apt_list+=("gimp")
 	apt_list+=("git")
 	apt_list+=("libreoffice")
 	apt_list+=("make")
 	apt_list+=("nautilus-dropbox")
 	#apt_list+=("obs-studio")
-	apt_list+=("qemu-kvm")
+	#apt_list+=("qemu-kvm")
 	apt_list+=("quodlibet")
 	apt_list+=("retroarch")
 	apt_list+=("transmission")
@@ -41,8 +41,8 @@ main() {
 	apt autoremove
 
 	snap refresh
-	snap install --classic android-studio
-	snap install vlc
+	#snap install --classic android-studio
+	#snap install vlc
 }
 
 add_ppa() {
