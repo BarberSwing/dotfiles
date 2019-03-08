@@ -71,7 +71,7 @@
     </keybind>
     <keybind key="W-Return W-t">
       <action name="Execute">
-        <command>gnome-terminal</command>
+        <command>x-terminal-emulator</command>
       </action>
     </keybind>
     <keybind key="W-Tab">
