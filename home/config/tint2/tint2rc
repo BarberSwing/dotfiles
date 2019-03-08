@@ -1,11 +1,11 @@
 rounded = 0
-background_color = #000000 50
+background_color = #000000 75
 
 rounded = 0
-background_color = #777777 25
+background_color = #3F3F3F 75
 
 rounded = 0
-background_color = #AA3333 95
+background_color = #9F3F3F 75
 
 panel_background_id = 1
 task_active_background_id = 2
@@ -17,7 +17,7 @@ panel_padding = 2 0 8
 
 taskbar_mode = multi_desktop
 taskbar_name = 1
-taskbar_name_font_color = #AAAAAA 100
+taskbar_name_font_color = #7F7F7F 100
 taskbar_name_active_font_color = #FFFFFF 100
 taskbar_padding = 3 6
 task_padding = 3 0
