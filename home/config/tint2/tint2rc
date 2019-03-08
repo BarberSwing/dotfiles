@@ -1,0 +1,37 @@
+rounded = 0
+background_color = #000000 50
+
+rounded = 0
+background_color = #777777 25
+
+rounded = 0
+background_color = #AA3333 95
+
+panel_background_id = 1
+task_active_background_id = 2
+task_urgent_background_id = 3
+
+panel_items = TSBC
+panel_size = 100% 36
+panel_padding = 2 0 8
+
+taskbar_mode = multi_desktop
+taskbar_name = 1
+taskbar_name_font_color = #AAAAAA 100
+taskbar_name_active_font_color = #FFFFFF 100
+taskbar_padding = 3 6
+task_padding = 3 0
+mouse_right = none
+mouse_scroll_up = none
+mouse_scroll_down = none
+
+systray_icon_size = 24
+
+time1_format = %H:%M
+time2_format = %a %m-%d
+clock_font_color = #ffffff 100
+
+battery_font_color = #ffffff 100
+battery_low_status = 10
+battery_low_cmd = notify-send "battery low"
+battery_tooltip = 0
