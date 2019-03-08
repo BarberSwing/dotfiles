@@ -8,6 +8,7 @@ fi
 main() {
 
 	add_ppa ubuntuhandbook1/audacity # audacity
+	add_ppa phoerious/keepassxc      # keepassxc
 	#add_ppa obsproject/obs-studio   # obs-studio
 	add_ppa lazka/ppa                # quodlibet
 	add_ppa libretro/stable          # retroarch
@@ -27,6 +28,7 @@ main() {
 	#apt_list+=("gcc-multilib")
 	apt_list+=("gimp")
 	apt_list+=("git")
+	apt_list+=("keepassxc")
 	apt_list+=("libreoffice")
 	apt_list+=("make")
 	apt_list+=("nautilus-dropbox")
@@ -35,6 +37,7 @@ main() {
 	apt_list+=("quodlibet")
 	apt_list+=("retroarch")
 	apt_list+=("transmission")
+	apt_list+=("valgrind")
 
 	apt install -y "${apt_list[@]}"
 
