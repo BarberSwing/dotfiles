@@ -20,6 +20,7 @@ taskbar_mode = multi_desktop
 taskbar_name = 1
 taskbar_name_font_color = #7F7F7F 100
 taskbar_name_active_font_color = #FFFFFF 100
+taskbar_padding = 2 0
 task_padding = 2 4
 mouse_right = none
 mouse_scroll_up = none
