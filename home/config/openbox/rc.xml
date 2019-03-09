@@ -74,6 +74,11 @@
         <command>x-terminal-emulator</command>
       </action>
     </keybind>
+    <keybind key="W-space">
+      <action name="Execute">
+        <command>rofi -show drun</command>
+      </action>
+    </keybind>
     <keybind key="W-Tab">
       <action name="NextWindow">
         <allDesktops>yes</allDesktops>
