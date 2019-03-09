@@ -12,16 +12,15 @@ task_active_background_id = 2
 task_urgent_background_id = 3
 
 panel_items = TSBC
-panel_size = 100% 36
-panel_padding = 2 0 8
+panel_size = 100% 32
+panel_padding = 4 0 4
 panel_layer = top
 
 taskbar_mode = multi_desktop
 taskbar_name = 1
 taskbar_name_font_color = #7F7F7F 100
 taskbar_name_active_font_color = #FFFFFF 100
-taskbar_padding = 3 6
-task_padding = 3 0
+task_padding = 2 4
 mouse_right = none
 mouse_scroll_up = none
 mouse_scroll_down = none
