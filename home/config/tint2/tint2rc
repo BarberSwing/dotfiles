@@ -1,5 +1,5 @@
 rounded = 0
-background_color = #000000 75
+background_color = #000000 100
 
 rounded = 0
 background_color = #3F3F3F 75
@@ -14,6 +14,7 @@ task_urgent_background_id = 3
 panel_items = TSBC
 panel_size = 100% 36
 panel_padding = 2 0 8
+panel_layer = top
 
 taskbar_mode = multi_desktop
 taskbar_name = 1
