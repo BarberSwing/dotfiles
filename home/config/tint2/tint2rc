@@ -26,6 +26,7 @@ mouse_scroll_up = none
 mouse_scroll_down = none
 
 systray_icon_size = 24
+systray_sort = ascending
 
 time1_format = %H:%M
 time2_format = %a %m-%d
