@@ -33,6 +33,7 @@ time1_format = %H:%M
 time2_format = %a %m-%d
 clock_font_color = #ffffff 100
 
+bat2_format = %t
 battery_font_color = #ffffff 100
 battery_low_status = 10
 battery_low_cmd = notify-send "battery low"
