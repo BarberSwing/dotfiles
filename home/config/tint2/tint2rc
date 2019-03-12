@@ -2,10 +2,10 @@ rounded = 0
 background_color = #000000 100
 
 rounded = 0
-background_color = #3F3F3F 75
+background_color = #FFFFFF 25
 
 rounded = 0
-background_color = #9F3F3F 75
+background_color = #FF0000 50
 
 panel_background_id = 1
 task_active_background_id = 2
@@ -15,13 +15,19 @@ panel_items = TSBC
 panel_size = 100% 32
 panel_padding = 4 0 4
 panel_layer = top
+panel_monitor = all
+mouse_effects = 0
+disable_transparency = 1
 
 taskbar_mode = multi_desktop
 taskbar_name = 1
 taskbar_name_font_color = #7F7F7F 100
 taskbar_name_active_font_color = #FFFFFF 100
-taskbar_padding = 2 0
+taskbar_name_padding = 4
+task_icon = 1
+task_centered = 1
 task_padding = 2 4
+task_tooltip = 1
 mouse_right = none
 mouse_scroll_up = none
 mouse_scroll_down = none
@@ -33,8 +39,11 @@ time1_format = %H:%M
 time2_format = %a %m-%d
 clock_font_color = #ffffff 100
 
+bat1_format = %p
 bat2_format = %t
 battery_font_color = #ffffff 100
 battery_low_status = 10
 battery_low_cmd = notify-send "battery low"
 battery_tooltip = 0
+
+tooltip_padding = 2 2
