@@ -45,6 +45,7 @@ main() {
 	apt_list+=("tint2")
 	apt_list+=("transmission")
 	apt_list+=("valgrind")
+	apt_list+=("xbacklight")
 
 	apt install -y "${apt_list[@]}"
 
