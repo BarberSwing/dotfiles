@@ -1,0 +1,26 @@
+Global {
+	edge=bottom
+	height=32
+	iconsize=32
+}
+Plugin {
+	type=pager
+}
+Plugin {
+	type=taskbar
+	Config {
+		MaxTaskWidth=512
+		ShowAllDesks=0
+		UseMouseWheel=0
+	}
+}
+Plugin {
+	type=tray
+}
+Plugin {
+	type=dclock
+	Config {
+		ClockFmt=%a %m-%d %R
+		BoldFont=1
+	}
+}
