@@ -1,2 +1,1 @@
-rofi.modi:            drun
-rofi.disable-history: true
+rofi.modi: drun
