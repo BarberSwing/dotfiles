@@ -37,6 +37,7 @@ main() {
 	packages+=("transmission")
 	packages+=("valgrind")
 	packages+=("xbacklight")
+	packages+=("xfce4-volumed")
 
 	apt install -y "${packages[@]}"
 
