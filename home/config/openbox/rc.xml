@@ -1,257 +1,238 @@
 <openbox_config>
-  <focus>
-    <focusNew>yes</focusNew>
-  </focus>
-  <placement>
-    <primaryMonitor>Mouse</primaryMonitor>
-  </placement>
-  <theme>
-    <name>Numix</name>
-    <titleLayout>NLDC</titleLayout>
-    <animateIconify>no</animateIconify>
-    <font place="ActiveWindow">
-      <size>9</size>
-      <weight>bold</weight>
-    </font>
-    <font place="InactiveWindow">
-      <size>9</size>
-      <weight>bold</weight>
-    </font>
-    <font place="MenuItem">
-      <size>9</size>
-    </font>
-    <font place="ActiveOnScreenDisplay">
-      <weight>bold</weight>
-    </font>
-    <font place="InactiveOnScreenDisplay">
-      <weight>bold</weight>
-    </font>
-  </theme>
-  <keyboard>
-    <keybind key="W-Escape">
-      <action name="Execute">
-        <command>slock</command>
-      </action>
-    </keybind>
-    <keybind key="XF86MonBrightnessDown">
-      <action name="Execute">
-        <command>xbacklight -set 25</command>
-      </action>
-    </keybind>
-    <keybind key="XF86MonBrightnessUp">
-      <action name="Execute">
-        <command>xbacklight -set 100</command>
-      </action>
-    </keybind>
-    <keybind key="XF86AudioMute">
-      <action name="Execute">
-        <command>pactl set-sink-mute @DEFAULT_SINK@ toggle</command>
-      </action>
-    </keybind>
-    <keybind key="XF86AudioLowerVolume">
-      <action name="Execute">
-        <command>pactl set-sink-volume @DEFAULT_SINK@ -2048</command>
-      </action>
-    </keybind>
-    <keybind key="XF86AudioRaiseVolume">
-      <action name="Execute">
-        <command>pactl set-sink-volume @DEFAULT_SINK@ +2048</command>
-      </action>
-    </keybind>
-    <keybind key="W-Print">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-        </startupnotify>
-        <command>openbox --reconfigure</command>
-      </action>
-    </keybind>
-    <keybind key="W-Delete">
-      <action name="Close"/>
-    </keybind>
-    <keybind key="W-Return W-t">
-      <action name="Execute">
-        <command>x-terminal-emulator</command>
-      </action>
-    </keybind>
-    <keybind key="W-space">
-      <action name="Execute">
-        <command>rofi -show drun</command>
-      </action>
-    </keybind>
-    <keybind key="W-Tab">
-      <action name="NextWindow">
-        <allDesktops>yes</allDesktops>
-        <finalactions>
-          <action name="Focus"/>
-          <action name="Raise"/>
-        </finalactions>
-      </action>
-    </keybind>
-    <keybind key="W-S-Tab">
-      <action name="PreviousWindow">
-        <allDesktops>yes</allDesktops>
-        <finalactions>
-          <action name="Focus"/>
-          <action name="Raise"/>
-        </finalactions>
-      </action>
-    </keybind>
-    <keybind key="W-q">
-      <action name="NextWindow">
-        <finalactions>
-          <action name="Focus"/>
-          <action name="Raise"/>
-        </finalactions>
-      </action>
-    </keybind>
-    <keybind key="W-S-q">
-      <action name="PreviousWindow">
-        <finalactions>
-          <action name="Focus"/>
-          <action name="Raise"/>
-        </finalactions>
-      </action>
-    </keybind>
-    <keybind key="W-w">
-      <action name="GoToDesktop">
-        <to>previous</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="W-s">
-      <action name="GoToDesktop">
-        <to>next</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="W-S-w">
-      <action name="SendToDesktop">
-        <to>previous</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="W-S-s">
-      <action name="SendToDesktop">
-        <to>next</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="W-a">
-      <action name="MoveResizeTo">
-        <monitor>prev</monitor>
-      </action>
-    </keybind>
-    <keybind key="W-d">
-      <action name="MoveResizeTo">
-        <monitor>next</monitor>
-      </action>
-    </keybind>
-    <keybind key="W-x">
-      <action name="Unmaximize"/>
-      <action name="MoveResizeTo">
-        <x>center</x>
-        <y>center</y>
-        <width>1/1</width>
-        <height>1/1</height>
-      </action>
-    </keybind>
-    <keybind key="W-z">
-      <action name="Unmaximize"/>
-      <action name="MoveResizeTo">
-        <x>0</x>
-        <y>center</y>
-        <width>1/2</width>
-        <height>1/1</height>
-      </action>
-    </keybind>
-    <keybind key="W-c">
-      <action name="Unmaximize"/>
-      <action name="MoveResizeTo">
-        <x>-0</x>
-        <y>center</y>
-        <width>1/2</width>
-        <height>1/1</height>
-      </action>
-    </keybind>
-  </keyboard>
-  <mouse>
-    <context name="Titlebar">
-      <mousebind button="Left Middle Right" action="Press">
-        <action name="Focus"/>
-        <action name="Raise"/>
-      </mousebind>
-      <mousebind button="Left" action="Drag">
-        <action name="Move"/>
-      </mousebind>
-      <mousebind button="Left" action="DoubleClick">
-        <action name="ToggleMaximize"/>
-      </mousebind>
-      <mousebind button="Right" action="Click">
-        <action name="ShowMenu">
-          <menu>client-menu</menu>
-        </action>
-      </mousebind>
-    </context>
-    <context name="AllDesktops">
-      <mousebind button="Left" action="Click">
-        <action name="ToggleOmnipresent"/>
-      </mousebind>
-    </context>
-    <context name="Iconify">
-      <mousebind button="Left" action="Click">
-        <action name="Iconify"/>
-      </mousebind>
-    </context>
-    <context name="Maximize">
-      <mousebind button="Left" action="Click">
-        <action name="ToggleMaximize"/>
-      </mousebind>
-    </context>
-    <context name="Close">
-      <mousebind button="Left" action="Click">
-        <action name="Close"/>
-      </mousebind>
-    </context>
-    <context name="Top">
-      <mousebind button="Left" action="Drag">
-        <action name="Resize">
-          <edge>top</edge>
-        </action>
-      </mousebind>
-    </context>
-    <context name="Left">
-      <mousebind button="Left" action="Drag">
-        <action name="Resize">
-          <edge>left</edge>
-        </action>
-      </mousebind>
-    </context>
-    <context name="Right">
-      <mousebind button="Left" action="Drag">
-        <action name="Resize">
-          <edge>right</edge>
-        </action>
-      </mousebind>
-    </context>
-    <context name="Bottom">
-      <mousebind button="Left" action="Drag">
-        <action name="Resize">
-          <edge>bottom</edge>
-        </action>
-      </mousebind>
-    </context>
-    <context name="Client">
-      <mousebind button="Left Middle Right" action="Press">
-        <action name="Focus"/>
-        <action name="Raise"/>
-      </mousebind>
-    </context>
-  </mouse>
-  <menu></menu>
-  <applications>
-    <application class="*">
-      <focus>yes</focus>
-    </application>
-  </applications>
+	<placement>
+		<primaryMonitor>Mouse</primaryMonitor>
+	</placement>
+	<theme>
+		<name>Numix</name>
+		<titleLayout>NLDC</titleLayout>
+		<animateIconify>no</animateIconify>
+		<font place="ActiveWindow">
+			<size>9</size>
+			<weight>bold</weight>
+		</font>
+		<font place="InactiveWindow">
+			<size>9</size>
+			<weight>bold</weight>
+		</font>
+		<font place="MenuItem">
+			<size>9</size>
+		</font>
+		<font place="ActiveOnScreenDisplay">
+			<weight>bold</weight>
+		</font>
+		<font place="InactiveOnScreenDisplay">
+			<weight>bold</weight>
+		</font>
+	</theme>
+	<keyboard>
+		<keybind key="W-Escape">
+			<action name="Execute">
+				<command>dm-tool lock</command>
+			</action>
+		</keybind>
+		<keybind key="W-Print">
+			<action name="Execute">
+				<command>openbox --reconfigure</command>
+			</action>
+		</keybind>
+		<keybind key="W-Delete">
+			<action name="Close"/>
+		</keybind>
+		<keybind key="W-Return W-t">
+			<action name="Execute">
+				<command>x-terminal-emulator</command>
+			</action>
+		</keybind>
+		<keybind key="W-space">
+			<action name="Execute">
+				<command>rofi -show drun</command>
+			</action>
+		</keybind>
+		<keybind key="W-Tab">
+			<action name="NextWindow">
+				<allDesktops>yes</allDesktops>
+				<finalactions>
+					<action name="Focus"/>
+					<action name="Raise"/>
+				</finalactions>
+			</action>
+		</keybind>
+		<keybind key="W-S-Tab">
+			<action name="PreviousWindow">
+				<allDesktops>yes</allDesktops>
+				<finalactions>
+					<action name="Focus"/>
+					<action name="Raise"/>
+				</finalactions>
+			</action>
+		</keybind>
+		<keybind key="W-q">
+			<action name="NextWindow">
+				<finalactions>
+					<action name="Focus"/>
+					<action name="Raise"/>
+				</finalactions>
+			</action>
+		</keybind>
+		<keybind key="W-S-q">
+			<action name="PreviousWindow">
+				<finalactions>
+					<action name="Focus"/>
+					<action name="Raise"/>
+				</finalactions>
+			</action>
+		</keybind>
+		<keybind key="W-w">
+			<action name="GoToDesktop">
+				<to>previous</to>
+				<wrap>no</wrap>
+			</action>
+		</keybind>
+		<keybind key="W-s">
+			<action name="GoToDesktop">
+				<to>next</to>
+				<wrap>no</wrap>
+			</action>
+		</keybind>
+		<keybind key="W-S-w">
+			<action name="SendToDesktop">
+				<to>previous</to>
+				<wrap>no</wrap>
+			</action>
+		</keybind>
+		<keybind key="W-S-s">
+			<action name="SendToDesktop">
+				<to>next</to>
+				<wrap>no</wrap>
+			</action>
+		</keybind>
+		<keybind key="W-a">
+			<action name="MoveResizeTo">
+				<monitor>prev</monitor>
+			</action>
+		</keybind>
+		<keybind key="W-d">
+			<action name="MoveResizeTo">
+				<monitor>next</monitor>
+			</action>
+		</keybind>
+		<keybind key="W-x">
+			<action name="Unmaximize"/>
+			<action name="MoveResizeTo">
+				<x>center</x>
+				<y>center</y>
+				<width>1/1</width>
+				<height>1/1</height>
+			</action>
+		</keybind>
+		<keybind key="W-z">
+			<action name="Unmaximize"/>
+			<action name="MoveResizeTo">
+				<x>0</x>
+				<y>center</y>
+				<width>1/2</width>
+				<height>1/1</height>
+			</action>
+		</keybind>
+		<keybind key="W-c">
+			<action name="Unmaximize"/>
+			<action name="MoveResizeTo">
+				<x>-0</x>
+				<y>center</y>
+				<width>1/2</width>
+				<height>1/1</height>
+			</action>
+		</keybind>
+	</keyboard>
+	<mouse>
+		<context name="Frame">
+			<mousebind button="W-Left W-Right" action="Press">
+				<action name="Focus"/>
+				<action name="Raise"/>
+			</mousebind>
+			<mousebind button="W-Left" action="Drag">
+				<action name="Move"/>
+			</mousebind>
+			<mousebind button="W-Right" action="Drag">
+				<action name="Resize"/>
+			</mousebind>
+		</context>
+		<context name="Titlebar">
+			<mousebind button="Left Middle Right" action="Press">
+				<action name="Focus"/>
+				<action name="Raise"/>
+			</mousebind>
+			<mousebind button="Left" action="Drag">
+				<action name="Move"/>
+			</mousebind>
+			<mousebind button="Left" action="DoubleClick">
+				<action name="ToggleMaximize"/>
+			</mousebind>
+			<mousebind button="Right" action="Click">
+				<action name="ShowMenu">
+					<menu>client-menu</menu>
+				</action>
+			</mousebind>
+		</context>
+		<context name="AllDesktops">
+			<mousebind button="Left" action="Click">
+				<action name="ToggleOmnipresent"/>
+			</mousebind>
+		</context>
+		<context name="Iconify">
+			<mousebind button="Left" action="Click">
+				<action name="Iconify"/>
+			</mousebind>
+		</context>
+		<context name="Maximize">
+			<mousebind button="Left" action="Click">
+				<action name="ToggleMaximize"/>
+			</mousebind>
+		</context>
+		<context name="Close">
+			<mousebind button="Left" action="Click">
+				<action name="Close"/>
+			</mousebind>
+		</context>
+		<context name="Top">
+			<mousebind button="Left" action="Drag">
+				<action name="Resize">
+					<edge>top</edge>
+				</action>
+			</mousebind>
+		</context>
+		<context name="Left">
+			<mousebind button="Left" action="Drag">
+				<action name="Resize">
+					<edge>left</edge>
+				</action>
+			</mousebind>
+		</context>
+		<context name="Right">
+			<mousebind button="Left" action="Drag">
+				<action name="Resize">
+					<edge>right</edge>
+				</action>
+			</mousebind>
+		</context>
+		<context name="Bottom">
+			<mousebind button="Left" action="Drag">
+				<action name="Resize">
+					<edge>bottom</edge>
+				</action>
+			</mousebind>
+		</context>
+		<context name="Client">
+			<mousebind button="Left Middle Right" action="Press">
+				<action name="Focus"/>
+				<action name="Raise"/>
+			</mousebind>
+		</context>
+	</mouse>
+	<menu></menu>
+	<applications>
+		<application class="*">
+			<focus>yes</focus>
+		</application>
+	</applications>
 </openbox_config>
