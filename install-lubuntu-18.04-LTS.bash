@@ -25,6 +25,7 @@ main() {
 	packages+=("git")
 	packages+=("keepassxc")
 	packages+=("libreoffice")
+	packages+=("make")
 	packages+=("numix-gtk-theme")
 	packages+=("numix-icon-theme")
 	packages+=("quodlibet")
