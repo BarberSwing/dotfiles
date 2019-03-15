@@ -4,7 +4,7 @@
 	</placement>
 	<theme>
 		<name>Numix</name>
-		<titleLayout>NLDC</titleLayout>
+		<titleLayout>NLDIMC</titleLayout>
 		<animateIconify>no</animateIconify>
 		<font place="ActiveWindow">
 			<size>9</size>
